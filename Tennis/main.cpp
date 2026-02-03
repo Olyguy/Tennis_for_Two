@@ -1,4 +1,4 @@
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #include <iostream>
 #include "Game.h"
 
@@ -16,7 +16,7 @@ int main(int argc, char* args[]) {
     Uint64 LAST = 0;
     float delta_time = 0;
 
-    const int FPS = 60; //set fps to 60
+    const int FPS = 100; //set fps to 100
     const int FRAME_DELAY = 1000 / FPS;
     Uint32 frame_start;
     Uint32 frame_time;

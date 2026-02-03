@@ -1,7 +1,7 @@
 #ifndef _GAME_H_
 #define _GAME_H_
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 enum Players { PLAYER_1, PLAYER_2 };
 
@@ -19,7 +19,6 @@ struct Object {
 class Game {
 public:
 	void init(const char* title, int w, int h, bool fullscreen);
-
 	void handle_events();
 	void update(float dt);
 	void render();
@@ -34,8 +33,7 @@ public:
 	void game_over_check();
 	void end_the_round();
 
-
-	bool running() { return is_running; };
+	bool running() const{ return is_running; };
 
 private:
 	Player Player1 = {PLAYER_1, 0}; // initate both with their corresponding enums

@@ -189,10 +189,10 @@ bool Game::crossed_half_field() {
 		return half_field;
 	}
 
-	if (current_turn == PLAYER_1 && ball.x > SCREEN_WIDTH / 2) {
+	if (current_turn == PLAYER_1 && ball.x > SCREEN_WIDTH / 2.0f) {
 		half_field = true;
 	}
-	else if (current_turn == PLAYER_2 && ball.x < SCREEN_WIDTH / 2) {
+	else if (current_turn == PLAYER_2 && ball.x < SCREEN_WIDTH / 2.0f) {
 		half_field = true;
 	}
 
