@@ -14,7 +14,7 @@ To ensure all file paths and dependencies resolve correctly, please follow these
 1.  **Clone the Repository**
     Do not download as a generic ZIP if possible, as this may alter directory nesting.
     ```bash
-    git clone [YOUR_GITHUB_LINK_HERE]
+    git clone https://github.com/Olyguy/Tennis_for_Two
     ```
 
 2.  **Open the Solution**
