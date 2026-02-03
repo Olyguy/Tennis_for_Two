@@ -100,7 +100,7 @@ void Game::handle_events() {
 				}
 			}
 
-			//use B to lob (shot_mode = 1)
+			//use B to lob (shot_mode 1)
 			if (ev.key.keysym.sym == SDLK_b) {
 				if (game_over)
 					return;
